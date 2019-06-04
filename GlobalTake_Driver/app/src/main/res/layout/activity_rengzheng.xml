@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_relay"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_relay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backimg_parent_height"
+        android:background="@color/statecolor">
+        <RelativeLayout
+            android:id="@+id/back_relay"
+            android:layout_width="@dimen/backimg_parent_width"
+            android:layout_height="@dimen/backimg_parent_height">
+            <ImageView
+                android:id="@+id/endorder_backimg"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/sousuo_xiangzuo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titlebar_centertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_driverrz"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/tip_driverrz"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/color333"
+        android:textSize="16sp"
+        android:layout_below="@+id/title_relay"
+        android:layout_height="wrap_content" />
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="        请携带司机本人身份证，驾驶证和车辆的保险前往全球行 代理点办理司机司机认证和相关信息录入"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/color666"
+        android:lineSpacingExtra="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/fuwuphone_tv"
+        android:layout_width="wrap_content"
+        android:text="详情拨打服务电话：1008611"
+        android:textColor="@color/distanceColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content" />-->
+
+    <WebView
+        android:id="@+id/register_webview"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"></WebView>
+
+</RelativeLayout>

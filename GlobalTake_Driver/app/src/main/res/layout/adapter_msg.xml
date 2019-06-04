@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ddsds"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/msg_tvtitle"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="撒地方都是大哥发的是"
+                android:ellipsize="end"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/msg_tvtime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/msg_tvtitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="end"
+                android:text="2016-12-13"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg_tvsummary"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="打发打发斯蒂芬是打发第三方第是否地方大幅度股份大股东第三个梵蒂冈梵蒂冈的股份大股东非官方的三方"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/msg_expand_layout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/msg_tvsummary"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/msg_spand"
+                android:layout_width="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/xiangxia"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
